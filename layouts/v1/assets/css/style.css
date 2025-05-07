@@ -1,0 +1,150 @@
+/**/
+
+.debug {
+    border: 1px solid red;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    overflow: auto;
+    background: linear-gradient(90deg, #141630 0%, #243B55 100%);
+    color: #fff;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #243B55;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    min-width: 600px;
+}
+
+a:hover, a:visited {
+    color: #fff;
+}
+
+.logo {
+    margin: 70px 0px 70px 0px;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.cafe {
+    position: absolute;
+    margin: 106px 0px 0px -34px;
+}
+
+.text {
+    font-style: italic;
+    margin: 8px 8px 54px 8px;
+    max-width: 660px;
+    text-align: justify;
+}
+
+.icons {
+    margin-bottom: 32px;
+}
+.icons i {
+    font-size: 36px;
+    margin: 0px 8px 0px 8px;
+}
+
+.link {
+    background: rgba(255, 255, 255, 0.5);
+    height: 60px;
+    border-radius: 50px;
+    margin: 0px 8px 18px 8px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.link-group {
+    margin-top: 12px;
+}
+
+.link-title {
+    font-weight: 700;
+    text-shadow: 1px 1px #141630;
+}
+
+footer {
+    margin-top: 133px;
+    padding-bottom: 7px;
+}
+
+@media screen and (min-width: 660px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 318px;
+    }
+
+    .logo img {
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 17px;
+    }
+
+    .link {
+        width: 660px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    main {
+        align-items: normal;
+    }
+    .logo {
+        width: 217px;
+    }
+
+    .logo img {
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: 15px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    .icons i {
+        font-size: 28px;
+    }
+}
